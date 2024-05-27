@@ -38,18 +38,18 @@ export default function createTemplate(){
     flexContainer.id = 'flexContainer';
     document.querySelector('#content').appendChild(flexContainer);
 
-    //Create top menu bar 
-    const leftPad = document.createElement('div');
-    leftPad.id = 'leftPad';
-    document.querySelector('#flexContainer').appendChild(leftPad);
+    //Create top section container
+    const topSection = document.createElement('div');
+    topSection.id = 'topSection';
+    document.querySelector('#flexContainer').appendChild(topSection);
 
-    //Create top menu bar 
-    const centreContent = document.createElement('div'); 
-    centreContent.id = 'centreContent';
-    document.querySelector('#flexContainer').appendChild(centreContent);
+    //Create middle content container 
+    const midSection = document.createElement('div'); 
+    midSection.id = ' midSection';
+    document.querySelector('#flexContainer').appendChild(midSection);
 
-    //Create top menu bar 
-    const rightPad = document.createElement('div');
-    rightPad.id = 'rightPad';
-    document.querySelector('#flexContainer').appendChild(rightPad);
+    //Create bottom content container
+    const botSection = document.createElement('div');
+    botSection.id = 'botSection';
+    document.querySelector('#flexContainer').appendChild(botSection);
 }
