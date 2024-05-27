@@ -40,10 +40,41 @@ export default function createTemplate(){
     topSection.id = 'topSection';
     document.querySelector('#flexContainer').appendChild(topSection);
 
+    const profileBlurbContainer = document.createElement('div');
+    profileBlurbContainer.id = 'profileBlurbContainer';
+    document.querySelector('#topSection').appendChild(profileBlurbContainer);
+
+    const profilePicContainer = document.createElement('div');
+    profilePicContainer.id = 'profilePicContainer';
+    document.querySelector('#topSection').appendChild(profilePicContainer);
+
+    const profilePic = document.createElement('div');
+    profilePic.id = 'profilePic';
+    document.querySelector('#profilePicContainer').appendChild(profilePic);
+
+    const skillsContainer = document.createElement('div');
+    skillsContainer.id = 'skillsContainer';
+    document.querySelector('#profilePicContainer').appendChild(skillsContainer);
+
     //Create middle content container 
     const midSection = document.createElement('div'); 
     midSection.id = 'midSection';
     document.querySelector('#flexContainer').appendChild(midSection);
+
+    const projectOneContainer = document.createElement('div');
+    projectOneContainer.id = 'projectOneContainer';
+    projectOneContainer.className = 'projectContainer';
+    document.querySelector('#midSection').appendChild(projectOneContainer);
+
+    const projectTwoContainer = document.createElement('div');
+    projectTwoContainer.id = 'projectTwoContainer';
+    projectTwoContainer.className = 'projectContainer';
+    document.querySelector('#midSection').appendChild(projectTwoContainer);
+
+    const projectThreeContainer = document.createElement('div');
+    projectThreeContainer.id = 'projectThreeContainer';
+    projectThreeContainer.className = 'projectContainer';
+    document.querySelector('#midSection').appendChild(projectThreeContainer);
 
     //Create bottom content container
     const botSection = document.createElement('div');
