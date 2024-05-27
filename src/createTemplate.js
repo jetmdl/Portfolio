@@ -5,31 +5,28 @@ export default function createTemplate(){
     menuBar.id = 'menuBar';
     document.querySelector('.content').appendChild(menuBar);
 
-    //Create and append icon container in menu bar 
-    const menuIconContainer = document.createElement('div');
-    menuIconContainer.id = 'menuIconContainer';
-    document.querySelector('#menuBar').appendChild(menuIconContainer);
-
     //Create and append button container and button divs in menu bar 
     const menuButtonContainer = document.createElement('div');
     menuButtonContainer.id = 'menuButtonContainer';
     document.querySelector('#menuBar').appendChild(menuButtonContainer);
 
-    const menuHomeButton = document.createElement('div');
-    menuHomeButton.id = 'menuHomeButton';
-    menuHomeButton.innerHTML = 'Home';
-    menuHomeButton.className = 'menuButton';
-    document.querySelector('#menuButtonContainer').appendChild(menuHomeButton);
+    const gitButtonContainer = document.createElement('div');
+    gitButtonContainer.id = 'gitButtonContainer';
+    gitButtonContainer.className = 'menuButton';
+    document.querySelector('#menuButtonContainer').appendChild(gitButtonContainer);
 
-    const menuMenuButton = document.createElement('div');
-    menuMenuButton.id = 'menuMenuButton';
-    menuMenuButton.innerHTML = 'Menu';
-    menuMenuButton.className = 'menuButton';
-    document.querySelector('#menuButtonContainer').appendChild(menuMenuButton);
+    const linkedinButtonContainer = document.createElement('div');
+    linkedinButtonContainer.id = 'linkedinButtonContainer';
+    linkedinButtonContainer.className = 'menuButton';
+    document.querySelector('#menuButtonContainer').appendChild(linkedinButtonContainer);
+
+    const CVButtonContainer = document.createElement('div');
+    CVButtonContainer.id = 'CVButtonContainer';
+    CVButtonContainer.className = 'menuButton';
+    document.querySelector('#menuButtonContainer').appendChild(CVButtonContainer);
 
     const menuContactButton = document.createElement('div');
     menuContactButton.id = 'menuContactButton';
-    menuContactButton.innerHTML = 'Contact';
     menuContactButton.className = 'menuButton';
     document.querySelector('#menuButtonContainer').appendChild(menuContactButton);
 
@@ -45,7 +42,7 @@ export default function createTemplate(){
 
     //Create middle content container 
     const midSection = document.createElement('div'); 
-    midSection.id = ' midSection';
+    midSection.id = 'midSection';
     document.querySelector('#flexContainer').appendChild(midSection);
 
     //Create bottom content container

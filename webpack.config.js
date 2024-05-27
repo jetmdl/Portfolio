@@ -5,8 +5,9 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
    entry: {
      index: './src/index.js',
    },
-  plugins: [
+   plugins: [
     new HtmlWebpackPlugin({
+        template: './src/index.html',
     }),
   ],
    output: {
@@ -18,6 +19,10 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
       {
         test: /\.css$/i,
         use: ['style-loader', 'css-loader'],
+      },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: 'asset/resource',
       },
     ],
   },
