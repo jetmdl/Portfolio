@@ -6,5 +6,6 @@ import createTemplate from './createTemplate';
 import gitIcon from './github.png';
 import linkedIcon from './linkedin.png';
 import cvIcon from './cv.png';
+import profile from './IMG_3036.jpg';
 
 createTemplate();
