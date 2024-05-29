@@ -48,7 +48,7 @@ body {
 }
 
 #menuButtonContainer {
-    width: 220px;
+    width: 170px;
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -184,7 +184,7 @@ p {
 }
 
 #midSection {
-    height: 40em;
+    height: 30em;
     width: 100%;
     max-width: 100vw;
     background-color: var(--blue1);
@@ -196,7 +196,7 @@ p {
 .projectContainer {
     background-color: #ffc300;
     width: 500px;
-    height: 500px;
+    height: 280px;
     margin-left: 50px;
     margin-right: 50px;
     display: flex;
@@ -208,7 +208,11 @@ p {
 .descriptionContainer {
     width: 100%;
     height: 200px;
-    background-color: rgba(0, 0, 0, .4);
+    background-color: rgba(0, 0, 0, .8);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.1rem;
+    color: antiquewhite;
+    padding: 10px;
 }
  #descriptionOneContainer {
     display: none;
@@ -232,6 +236,12 @@ p {
 
  #projectThreeContainer:hover > #descriptionThreeContainer {
     display: block;
+ }
+
+ #projectOneContainer {
+    background: url('./wpms.png');
+    background-repeat: no-repeat;
+    background-size: 500px 280px;
  }
 
 #botSection {

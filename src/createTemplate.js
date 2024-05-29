@@ -5,6 +5,11 @@ export default function createTemplate(){
                     a new journey in web development. I have experience in HTML, CSS, JavaScript, 
                     Webpack, and Git.`;
 
+    const WPMSblurb =   `WPMS (Works Progress Management System - This is a system to track the 
+                        production of the components of an extrusion die as they move across the 
+                        factory floor. This project is the third version of WPMS and is primarily 
+                        a re-design of the UI.  `;
+
     //Create and append top menu bar 
     const menuBar = document.createElement('div');
     menuBar.id = 'menuBar';
@@ -15,10 +20,10 @@ export default function createTemplate(){
     menuButtonContainer.id = 'menuButtonContainer';
     document.querySelector('#menuBar').appendChild(menuButtonContainer);
 
-    const gitButtonContainer = document.createElement('div');
-    gitButtonContainer.id = 'gitButtonContainer';
-    gitButtonContainer.className = 'menuButton';
-    document.querySelector('#menuButtonContainer').appendChild(gitButtonContainer);
+        const gitButtonContainer = document.createElement('div');
+        gitButtonContainer.id = 'gitButtonContainer';
+        gitButtonContainer.className = 'menuButton';
+        document.querySelector('#menuButtonContainer').appendChild(gitButtonContainer);
 
         const linkedinButtonContainer = document.createElement('div');
         linkedinButtonContainer.id = 'linkedinButtonContainer';
@@ -30,10 +35,10 @@ export default function createTemplate(){
         CVButtonContainer.className = 'menuButton';
         document.querySelector('#menuButtonContainer').appendChild(CVButtonContainer);
 
-        const menuContactButton = document.createElement('div');
-        menuContactButton.id = 'menuContactButton';
-        menuContactButton.className = 'menuButton';
-        document.querySelector('#menuButtonContainer').appendChild(menuContactButton);
+        // const menuContactButton = document.createElement('div');
+        // menuContactButton.id = 'menuContactButton';
+        // menuContactButton.className = 'menuButton';
+        // document.querySelector('#menuButtonContainer').appendChild(menuContactButton);
 
     //Create and append the flex container that holds the center content and padding divs 
     const flexContainer = document.createElement('div');
@@ -84,10 +89,6 @@ export default function createTemplate(){
             profilePic.id = 'profilePic';
             document.querySelector('#profilePicContainer').appendChild(profilePic);
 
-    // const skillsContainer = document.createElement('div');
-    // skillsContainer.id = 'skillsContainer';
-    // document.querySelector('#profilePicContainer').appendChild(skillsContainer);
-
     //Create middle content container 
     const midSection = document.createElement('div'); 
     midSection.id = 'midSection';
@@ -101,6 +102,7 @@ export default function createTemplate(){
             const descriptionOneContainer = document.createElement('div');
             descriptionOneContainer.id = 'descriptionOneContainer';
             descriptionOneContainer.className = 'descriptionContainer';
+            descriptionOneContainer.innerHTML = WPMSblurb;
             document.querySelector('#projectOneContainer').appendChild(descriptionOneContainer);
 
         const projectTwoContainer = document.createElement('div');
