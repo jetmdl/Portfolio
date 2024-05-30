@@ -10,6 +10,10 @@ export default function createTemplate(){
                         factory floor. This project is the third version of WPMS and is primarily 
                         a re-design of the UI.  `;
 
+    const positionOneText = `This position`;
+
+    const positionTwoText = `This position`;
+
     //Create and append top menu bar 
     const menuBar = document.createElement('div');
     menuBar.id = 'menuBar';
@@ -161,15 +165,56 @@ export default function createTemplate(){
                 positionsTitle.id = 'positionsTitle';
                 document.querySelector('#positionsContainer').appendChild(positionsTitle);
 
+                    const positionsTitleText = document.createElement('H2');
+                    positionsTitleText.id = 'positionsTitleText';
+                    positionsTitleText.innerHTML = 'Previous Experience:';
+                    document.querySelector('#positionsTitle').appendChild(positionsTitleText);
+
                 const positionsOne = document.createElement('div');
                 positionsOne.id = 'positionsOne';
                 positionsOne.className = 'positions';
                 document.querySelector('#positionsContainer').appendChild(positionsOne);
 
+                    const positionsHeaderContainerOne = document.createElement('div');
+                    positionsHeaderContainerOne.id = 'positionsHeaderContainerOne';
+                    positionsHeaderContainerOne.className = 'positionHeaderContainer';
+                    positionsHeaderContainerOne.innerHTML = 'CAD/CAM Programmer & IT Manager - Alutool Preform Ltd';
+                    document.querySelector('#positionsOne').appendChild(positionsHeaderContainerOne);
+
+                    const positionsBodyContainerOne = document.createElement('div');
+                    positionsBodyContainerOne.id = 'positionsBodyContainerOne';
+                    positionsBodyContainerOne.className = 'positionBodyContainer';
+                    positionsBodyContainerOne.innerHTML = positionOneText;
+                    document.querySelector('#positionsOne').appendChild(positionsBodyContainerOne);
+
+                    const positionsDateContainerOne = document.createElement('div');
+                    positionsDateContainerOne.id = 'positionsDateContainerOne';
+                    positionsDateContainerOne.className = 'positionDateContainer';
+                    positionsDateContainerOne.innerHTML = 'August 2019 - March 2024';
+                    document.querySelector('#positionsOne').appendChild(positionsDateContainerOne);
+
                 const positionsTwo = document.createElement('div');
                 positionsTwo.id = 'positionsTwo';
                 positionsTwo.className = 'positions';
                 document.querySelector('#positionsContainer').appendChild(positionsTwo);
+
+                    const positionsHeaderContainerTwo = document.createElement('div');
+                    positionsHeaderContainerTwo.id = 'positionsHeaderContainerTwo';
+                    positionsHeaderContainerTwo.className = 'positionHeaderContainer';
+                    positionsHeaderContainerTwo.innerHTML = 'CAD/CAM Programmer - Extrusion Form Tools Ltd';
+                    document.querySelector('#positionsTwo').appendChild(positionsHeaderContainerTwo);
+
+                    const positionsBodyContainerTwo = document.createElement('div');
+                    positionsBodyContainerTwo.id = 'positionsBodyContainerTwo';
+                    positionsBodyContainerTwo.className = 'positionBodyContainer';
+                    positionsBodyContainerTwo.innerHTML = positionTwoText;
+                    document.querySelector('#positionsTwo').appendChild(positionsBodyContainerTwo);
+
+                    const positionsDateContainerTwo = document.createElement('div');
+                    positionsDateContainerTwo.id = 'positionsDateContainerTwo';
+                    positionsDateContainerTwo.className = 'positionDateContainer';
+                    positionsDateContainerTwo.innerHTML = 'July 2013 - August 2019';
+                    document.querySelector('#positionsTwo').appendChild(positionsDateContainerTwo);
 
                 const positionsThree = document.createElement('div');
                 positionsThree.id = 'positionsOne';

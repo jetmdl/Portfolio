@@ -276,6 +276,7 @@ p {
     max-width: 1250px;
     align-items: center;
     justify-content: center;
+    padding-top: 30px;
 }
 
 #positionsContainer {
@@ -295,11 +296,40 @@ p {
     margin-bottom: 20px;  
 }
 
+h2 {
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: antiquewhite;
+    font-weight: lighter;
+}
+
 .positions {
     width: 100%;
     height: 300px;
     background-color: aquamarine;
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.positionHeaderContainer {
+    width: 100%;
+    height: 40px;
+    background-color: rgb(255, 127, 234);
+}
+
+.positionBodyContainer {
+    width: 100%;
+    flex-grow: 1;
+    background-color: rgb(136, 127, 255);
+}
+
+.positionDateContainer {
+    width: 100%;
+    height: 40px;
+    background-color: rgb(236, 255, 127);
 }
 
 #contactContainer {
@@ -308,3 +338,4 @@ p {
     background-color: brown;
     flex-grow: 1;
 }
+
