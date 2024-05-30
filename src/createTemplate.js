@@ -50,44 +50,58 @@ export default function createTemplate(){
     topSection.id = 'topSection';
     document.querySelector('#flexContainer').appendChild(topSection);
 
-        const profileBlurbContainer = document.createElement('div');
-        profileBlurbContainer.id = 'profileBlurbContainer';
-        document.querySelector('#topSection').appendChild(profileBlurbContainer);
+        const leftPadding = document.createElement('div');
+        leftPadding.id = 'leftPadding';
+        leftPadding.className = 'padding';
+        document.querySelector('#topSection').appendChild(leftPadding);
 
-            const profileBlurbTitle = document.createElement('div');
-            profileBlurbTitle.id = 'profileBlurbTitle';
-            document.querySelector('#profileBlurbContainer').appendChild(profileBlurbTitle);
+        const topCenterContainer = document.createElement('div');
+        topCenterContainer.id = 'topCenterContainer';
+        document.querySelector('#topSection').appendChild(topCenterContainer);
 
-                const profileBlurbTitleText = document.createElement('H1');
-                profileBlurbTitleText.id = 'profileBlurbTitleText';
-                profileBlurbTitleText.innerHTML = 'Hi, my name is James.'
-                document.querySelector('#profileBlurbTitle').appendChild(profileBlurbTitleText);
+            const profileBlurbContainer = document.createElement('div');
+            profileBlurbContainer.id = 'profileBlurbContainer';
+            document.querySelector('#topCenterContainer').appendChild(profileBlurbContainer);
 
-            const profileBlurb = document.createElement('div');
-            profileBlurb.id = 'profileBlurb';
-            document.querySelector('#profileBlurbContainer').appendChild(profileBlurb);
+                const profileBlurbTitle = document.createElement('div');
+                profileBlurbTitle.id = 'profileBlurbTitle';
+                document.querySelector('#profileBlurbContainer').appendChild(profileBlurbTitle);
 
-                const profileBlurbText = document.createElement('p');
-                profileBlurbText.id = 'profileBlurbText';
-                profileBlurbText.innerHTML = blurb;
-                document.querySelector('#profileBlurb').appendChild(profileBlurbText);
+                    const profileBlurbTitleText = document.createElement('H1');
+                    profileBlurbTitleText.id = 'profileBlurbTitleText';
+                    profileBlurbTitleText.innerHTML = 'Hi, my name is James.'
+                    document.querySelector('#profileBlurbTitle').appendChild(profileBlurbTitleText);
 
-            const skillsContainer = document.createElement('div');
-            skillsContainer.id = 'skillsContainer';
-            document.querySelector('#profileBlurbContainer').appendChild(skillsContainer);
+                const profileBlurb = document.createElement('div');
+                profileBlurb.id = 'profileBlurb';
+                document.querySelector('#profileBlurbContainer').appendChild(profileBlurb);
 
-                const skillsText = document.createElement('p');
-                skillsText.id = 'skillsText';
-                skillsText.innerHTML = 'Please Check out some of my projects below.';
-                document.querySelector('#skillsContainer').appendChild(skillsText);
+                    const profileBlurbText = document.createElement('p');
+                    profileBlurbText.id = 'profileBlurbText';
+                    profileBlurbText.innerHTML = blurb;
+                    document.querySelector('#profileBlurb').appendChild(profileBlurbText);
 
-        const profilePicContainer = document.createElement('div');
-        profilePicContainer.id = 'profilePicContainer';
-        document.querySelector('#topSection').appendChild(profilePicContainer);
+                const skillsContainer = document.createElement('div');
+                skillsContainer.id = 'skillsContainer';
+                document.querySelector('#profileBlurbContainer').appendChild(skillsContainer);
 
-            const profilePic = document.createElement('div');
-            profilePic.id = 'profilePic';
-            document.querySelector('#profilePicContainer').appendChild(profilePic);
+                    const skillsText = document.createElement('p');
+                    skillsText.id = 'skillsText';
+                    skillsText.innerHTML = 'Please Check out some of my projects below.';
+                    document.querySelector('#skillsContainer').appendChild(skillsText);
+
+            const profilePicContainer = document.createElement('div');
+            profilePicContainer.id = 'profilePicContainer';
+            document.querySelector('#topCenterContainer').appendChild(profilePicContainer);
+
+                const profilePic = document.createElement('div');
+                profilePic.id = 'profilePic';
+                document.querySelector('#profilePicContainer').appendChild(profilePic);
+
+        const rightPadding = document.createElement('div');
+        rightPadding.id = 'rightPadding';
+        rightPadding.className = 'padding';
+        document.querySelector('#topSection').appendChild(rightPadding);
 
     //Create middle content container 
     const midSection = document.createElement('div'); 
@@ -129,4 +143,45 @@ export default function createTemplate(){
     const botSection = document.createElement('div');
     botSection.id = 'botSection';
     document.querySelector('#flexContainer').appendChild(botSection);
+
+        const botLeftPadding = document.createElement('div');
+        botLeftPadding.id = 'botLeftPadding';
+        botLeftPadding.className = 'padding';
+        document.querySelector('#botSection').appendChild(botLeftPadding);
+
+        const botContent = document.createElement('div');
+        botContent.id = 'botContent';
+        document.querySelector('#botSection').appendChild(botContent);
+
+            const positionsContainer = document.createElement('div');
+            positionsContainer.id = 'positionsContainer';
+            document.querySelector('#botContent').appendChild(positionsContainer);
+
+                const positionsTitle = document.createElement('div');
+                positionsTitle.id = 'positionsTitle';
+                document.querySelector('#positionsContainer').appendChild(positionsTitle);
+
+                const positionsOne = document.createElement('div');
+                positionsOne.id = 'positionsOne';
+                positionsOne.className = 'positions';
+                document.querySelector('#positionsContainer').appendChild(positionsOne);
+
+                const positionsTwo = document.createElement('div');
+                positionsTwo.id = 'positionsTwo';
+                positionsTwo.className = 'positions';
+                document.querySelector('#positionsContainer').appendChild(positionsTwo);
+
+                const positionsThree = document.createElement('div');
+                positionsThree.id = 'positionsOne';
+                positionsThree.className = 'positions';
+                document.querySelector('#positionsContainer').appendChild(positionsThree);
+
+            const contactContainer = document.createElement('div');
+            contactContainer.id = 'contactContainer';
+            document.querySelector('#botContent').appendChild(contactContainer);
+
+        const botRightPadding = document.createElement('div');
+        botRightPadding.id = 'botRightPadding';
+        botRightPadding.className = 'padding';
+        document.querySelector('#botSection').appendChild(botRightPadding);
 }
