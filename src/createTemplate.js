@@ -5,14 +5,18 @@ export default function createTemplate(){
                     a new journey in web development. I have experience in HTML, CSS, JavaScript, 
                     Webpack, and Git.`;
 
-    const WPMSblurb =   `WPMS (Works Progress Management System - This is a system to track the 
+    const WPMSblurb =   `WPMS (Works Progress Management System) - This is a system to track the 
                         production of the components of an extrusion die as they move across the 
                         factory floor. This project is the third version of WPMS and is primarily 
                         a re-design of the UI.  `;
 
-    const positionOneText = `This position`;
+    const positionOneText = `In this role, I was responsible for creating CAD/CAM output, including 
+                            developing new solid-modelling methods, and production automation procedures. 
+                            I was also responsible for producing internal production tools, such as WPMS shown above.`;
 
-    const positionTwoText = `This position`;
+    const positionTwoText = `In this role, I was responsible for creating CAM output for CNC mills 
+                            and wire-EDM, as well as developing production automation processes and 
+                            CAM macros. I was also responsible for using CMM to ensure production quality. `;
 
     //Create and append top menu bar 
     const menuBar = document.createElement('div');
@@ -167,7 +171,7 @@ export default function createTemplate(){
 
                     const positionsTitleText = document.createElement('H2');
                     positionsTitleText.id = 'positionsTitleText';
-                    positionsTitleText.innerHTML = 'Previous Experience:';
+                    positionsTitleText.innerHTML = 'Previous Positions:';
                     document.querySelector('#positionsTitle').appendChild(positionsTitleText);
 
                 const positionsOne = document.createElement('div');
@@ -181,17 +185,17 @@ export default function createTemplate(){
                     positionsHeaderContainerOne.innerHTML = 'CAD/CAM Programmer & IT Manager - Alutool Preform Ltd';
                     document.querySelector('#positionsOne').appendChild(positionsHeaderContainerOne);
 
-                    const positionsBodyContainerOne = document.createElement('div');
-                    positionsBodyContainerOne.id = 'positionsBodyContainerOne';
-                    positionsBodyContainerOne.className = 'positionBodyContainer';
-                    positionsBodyContainerOne.innerHTML = positionOneText;
-                    document.querySelector('#positionsOne').appendChild(positionsBodyContainerOne);
-
                     const positionsDateContainerOne = document.createElement('div');
                     positionsDateContainerOne.id = 'positionsDateContainerOne';
                     positionsDateContainerOne.className = 'positionDateContainer';
                     positionsDateContainerOne.innerHTML = 'August 2019 - March 2024';
                     document.querySelector('#positionsOne').appendChild(positionsDateContainerOne);
+
+                    const positionsBodyContainerOne = document.createElement('div');
+                    positionsBodyContainerOne.id = 'positionsBodyContainerOne';
+                    positionsBodyContainerOne.className = 'positionBodyContainer';
+                    positionsBodyContainerOne.innerHTML = positionOneText;
+                    document.querySelector('#positionsOne').appendChild(positionsBodyContainerOne);
 
                 const positionsTwo = document.createElement('div');
                 positionsTwo.id = 'positionsTwo';
@@ -204,29 +208,52 @@ export default function createTemplate(){
                     positionsHeaderContainerTwo.innerHTML = 'CAD/CAM Programmer - Extrusion Form Tools Ltd';
                     document.querySelector('#positionsTwo').appendChild(positionsHeaderContainerTwo);
 
-                    const positionsBodyContainerTwo = document.createElement('div');
-                    positionsBodyContainerTwo.id = 'positionsBodyContainerTwo';
-                    positionsBodyContainerTwo.className = 'positionBodyContainer';
-                    positionsBodyContainerTwo.innerHTML = positionTwoText;
-                    document.querySelector('#positionsTwo').appendChild(positionsBodyContainerTwo);
-
                     const positionsDateContainerTwo = document.createElement('div');
                     positionsDateContainerTwo.id = 'positionsDateContainerTwo';
                     positionsDateContainerTwo.className = 'positionDateContainer';
                     positionsDateContainerTwo.innerHTML = 'July 2013 - August 2019';
                     document.querySelector('#positionsTwo').appendChild(positionsDateContainerTwo);
 
-                const positionsThree = document.createElement('div');
-                positionsThree.id = 'positionsOne';
-                positionsThree.className = 'positions';
-                document.querySelector('#positionsContainer').appendChild(positionsThree);
+                    const positionsBodyContainerTwo = document.createElement('div');
+                    positionsBodyContainerTwo.id = 'positionsBodyContainerTwo';
+                    positionsBodyContainerTwo.className = 'positionBodyContainer';
+                    positionsBodyContainerTwo.innerHTML = positionTwoText;
+                    document.querySelector('#positionsTwo').appendChild(positionsBodyContainerTwo);
+
+                // const positionsThree = document.createElement('div');
+                // positionsThree.id = 'positionsOne';
+                // positionsThree.className = 'positions';
+                // document.querySelector('#positionsContainer').appendChild(positionsThree);
 
             const contactContainer = document.createElement('div');
             contactContainer.id = 'contactContainer';
             document.querySelector('#botContent').appendChild(contactContainer);
 
+                const contactGitContainer = document.createElement('div');
+                contactGitContainer.id = 'contactGitContainer';
+                contactGitContainer.className = 'contactItem';
+                contactGitContainer.innerHTML = 'Find me on GitHub';
+                document.querySelector('#contactContainer').appendChild(contactGitContainer);
+
+                const contactLinkedContainer = document.createElement('div');
+                contactLinkedContainer.id = 'contactLinkedContainer';
+                contactLinkedContainer.className = 'contactItem';
+                contactLinkedContainer.innerHTML = 'Find me on LinkedIn';
+                document.querySelector('#contactContainer').appendChild(contactLinkedContainer);
+
+                const contactCVContainer = document.createElement('div');
+                contactCVContainer.id = 'contactCVContainer';
+                contactCVContainer.className = 'contactItem';
+                contactCVContainer.innerHTML = 'See my full CV here';
+                document.querySelector('#contactContainer').appendChild(contactCVContainer);
+
         const botRightPadding = document.createElement('div');
         botRightPadding.id = 'botRightPadding';
         botRightPadding.className = 'padding';
         document.querySelector('#botSection').appendChild(botRightPadding);
+
+    //Create top section container
+    const footerSection = document.createElement('div');
+    footerSection.id = 'footerSection';
+    document.querySelector('#flexContainer').appendChild(footerSection);
 }
