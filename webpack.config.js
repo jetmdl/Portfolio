@@ -24,6 +24,17 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: 'asset/resource',
       },
+      {
+        test: /\.(pdf)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]'
+            }
+          },
+        ],
+      },
     ],
   },
  };
