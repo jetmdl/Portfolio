@@ -77,7 +77,7 @@ export default function createTemplate(){
 
                     const profileBlurbTitleText = document.createElement('H1');
                     profileBlurbTitleText.id = 'profileBlurbTitleText';
-                    profileBlurbTitleText.innerHTML = 'Hi, my name is James.'
+                    profileBlurbTitleText.innerHTML = 'Hi! my name is James...'
                     document.querySelector('#profileBlurbTitle').appendChild(profileBlurbTitleText);
 
                 const profileBlurb = document.createElement('div');
@@ -188,7 +188,7 @@ export default function createTemplate(){
                     const positionsDateContainerOne = document.createElement('div');
                     positionsDateContainerOne.id = 'positionsDateContainerOne';
                     positionsDateContainerOne.className = 'positionDateContainer';
-                    positionsDateContainerOne.innerHTML = 'August 2019 - March 2024';
+                    positionsDateContainerOne.innerHTML = '2019 - 2024';
                     document.querySelector('#positionsOne').appendChild(positionsDateContainerOne);
 
                     const positionsBodyContainerOne = document.createElement('div');
@@ -211,7 +211,7 @@ export default function createTemplate(){
                     const positionsDateContainerTwo = document.createElement('div');
                     positionsDateContainerTwo.id = 'positionsDateContainerTwo';
                     positionsDateContainerTwo.className = 'positionDateContainer';
-                    positionsDateContainerTwo.innerHTML = 'July 2013 - August 2019';
+                    positionsDateContainerTwo.innerHTML = '2013 - 2019';
                     document.querySelector('#positionsTwo').appendChild(positionsDateContainerTwo);
 
                     const positionsBodyContainerTwo = document.createElement('div');

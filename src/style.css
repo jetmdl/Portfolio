@@ -76,6 +76,10 @@ body {
     /* Icon by riajulislam */
 }
 
+#gitButtonContainer:hover {
+    background-color: rgb(154, 183, 238);
+}
+
 #linkedinButtonContainer {
     background: url('./linkedin.png');
     background-repeat: no-repeat;
@@ -86,6 +90,10 @@ body {
     /* Icon by riajulislam */
 }
 
+#linkedinButtonContainer:hover {
+    background-color: rgb(154, 183, 238);
+}
+
 #CVButtonContainer {
     background: url('./cv.png');
     background-repeat: no-repeat;
@@ -94,6 +102,10 @@ body {
     border-radius: 5px;
     /* <a href="https://www.flaticon.com/free-icons/curriculum-vitae" title="curriculum vitae icons">Curriculum vitae icons created by edt.im - Flaticon</a> */
     /* Icon By edt.im */
+}
+
+#CVButtonContainer:hover {
+    background-color: rgb(154, 183, 238);
 }
 
 #flexContainer {
