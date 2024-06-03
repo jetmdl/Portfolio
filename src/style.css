@@ -78,6 +78,7 @@ body {
 
 #gitButtonContainer:hover {
     background-color: rgb(154, 183, 238);
+    cursor: pointer;
 }
 
 #linkedinButtonContainer {
@@ -92,6 +93,7 @@ body {
 
 #linkedinButtonContainer:hover {
     background-color: rgb(154, 183, 238);
+    cursor: pointer;
 }
 
 #CVButtonContainer {
@@ -106,6 +108,7 @@ body {
 
 #CVButtonContainer:hover {
     background-color: rgb(154, 183, 238);
+    cursor: pointer;
 }
 
 #flexContainer {
@@ -386,6 +389,7 @@ h2 {
 
 .contactItem:hover {
     background-color: var(--blue3);
+    cursor: pointer;
 }
 
 #footerSection {
