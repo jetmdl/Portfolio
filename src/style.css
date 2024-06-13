@@ -207,6 +207,7 @@ p {
     background: url('./IMG_3036.jpg');
     background-repeat: no-repeat;
     background-size: 400px 400px;
+    filter: drop-shadow(-20px 20px 10px #000814);
 }
 
 #skillsContainer {
