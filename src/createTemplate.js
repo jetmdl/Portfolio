@@ -1,6 +1,6 @@
 export default function createTemplate(){
     const blurb =   `I'm an aspiring web developer based in Carmarthenshire, 
-                    South Wales. After more than ten years working in CAD/CAM programming, 
+                    South Wales. After more than ten years working in CAD/CAM programming 
                     and production automation in the extrusion die industry, I am now beginning 
                     a new journey in web development. `;
                     // I have experience in HTML, CSS, JavaScript, 
@@ -251,36 +251,66 @@ export default function createTemplate(){
     midSection.id = 'midSection';
     document.querySelector('#flexContainer').appendChild(midSection);
 
-        const projectOneContainer = document.createElement('div');
-        projectOneContainer.id = 'projectOneContainer';
-        projectOneContainer.className = 'projectContainer';
-        document.querySelector('#midSection').appendChild(projectOneContainer);
+        const projectTitleContainer = document.createElement('div');
+        projectTitleContainer.id = 'projectTitleContainer';
+        projectTitleContainer.className = 'projectTitleContainer';
+        document.querySelector('#midSection').appendChild(projectTitleContainer);
 
-            const descriptionOneContainer = document.createElement('div');
-            descriptionOneContainer.id = 'descriptionOneContainer';
-            descriptionOneContainer.className = 'descriptionContainer';
-            descriptionOneContainer.innerHTML = WPMSblurb;
-            document.querySelector('#projectOneContainer').appendChild(descriptionOneContainer);
+            const projectTitleleftpad = document.createElement('div');
+            projectTitleleftpad.id = 'projectTitleleftpad';
+            projectTitleleftpad.className = 'padding';
+            document.querySelector('#projectTitleContainer').appendChild(projectTitleleftpad);
 
-        const projectTwoContainer = document.createElement('div');
-        projectTwoContainer.id = 'projectTwoContainer';
-        projectTwoContainer.className = 'projectContainer';
-        document.querySelector('#midSection').appendChild(projectTwoContainer);
+            const projectTitleTextContainer = document.createElement('div');
+            projectTitleTextContainer.id = 'projectTitleTextContainer';
+            projectTitleTextContainer.className = 'projectTitleTextContainer';
+            document.querySelector('#projectTitleContainer').appendChild(projectTitleTextContainer);
 
-            const descriptionTwoContainer = document.createElement('div');
-            descriptionTwoContainer.id = 'descriptionTwoContainer';
-            descriptionTwoContainer.className = 'descriptionContainer';
-            document.querySelector('#projectTwoContainer').appendChild(descriptionTwoContainer);
+                const projectTitleText = document.createElement('p');
+                projectTitleText.id = 'projectTitleText';
+                projectTitleText.innerHTML = 'Projects:';
+                document.querySelector('#projectTitleTextContainer').appendChild(projectTitleText);
 
-        const projectThreeContainer = document.createElement('div');
-        projectThreeContainer.id = 'projectThreeContainer';
-        projectThreeContainer.className = 'projectContainer';
-        document.querySelector('#midSection').appendChild(projectThreeContainer);
+            const projectTitleRightPad = document.createElement('div');
+            projectTitleRightPad.id = 'projectTitleRightPad';
+            projectTitleRightPad.className = 'padding';
+            document.querySelector('#projectTitleContainer').appendChild(projectTitleRightPad);
 
-            const descriptionThreeContainer = document.createElement('div');
-            descriptionThreeContainer.id = 'descriptionThreeContainer';
-            descriptionThreeContainer.className = 'descriptionContainer';
-            document.querySelector('#projectThreeContainer').appendChild(descriptionThreeContainer);  
+        const projectPreviewContainer = document.createElement('div');
+        projectPreviewContainer.id = 'projectPreviewContainer';
+        projectPreviewContainer.className = 'projectPreviewContainer';
+        document.querySelector('#midSection').appendChild(projectPreviewContainer);
+
+            const projectOneContainer = document.createElement('div');
+            projectOneContainer.id = 'projectOneContainer';
+            projectOneContainer.className = 'projectContainer';
+            document.querySelector('#projectPreviewContainer').appendChild(projectOneContainer);
+
+                const descriptionOneContainer = document.createElement('div');
+                descriptionOneContainer.id = 'descriptionOneContainer';
+                descriptionOneContainer.className = 'descriptionContainer';
+                descriptionOneContainer.innerHTML = WPMSblurb;
+                document.querySelector('#projectOneContainer').appendChild(descriptionOneContainer);
+
+            const projectTwoContainer = document.createElement('div');
+            projectTwoContainer.id = 'projectTwoContainer';
+            projectTwoContainer.className = 'projectContainer';
+            document.querySelector('#projectPreviewContainer').appendChild(projectTwoContainer);
+
+                const descriptionTwoContainer = document.createElement('div');
+                descriptionTwoContainer.id = 'descriptionTwoContainer';
+                descriptionTwoContainer.className = 'descriptionContainer';
+                document.querySelector('#projectTwoContainer').appendChild(descriptionTwoContainer);
+
+            const projectThreeContainer = document.createElement('div');
+            projectThreeContainer.id = 'projectThreeContainer';
+            projectThreeContainer.className = 'projectContainer';
+            document.querySelector('#projectPreviewContainer').appendChild(projectThreeContainer);
+
+                const descriptionThreeContainer = document.createElement('div');
+                descriptionThreeContainer.id = 'descriptionThreeContainer';
+                descriptionThreeContainer.className = 'descriptionContainer';
+                document.querySelector('#projectThreeContainer').appendChild(descriptionThreeContainer);  
 
     //Create bottom content container
     const botSection = document.createElement('div');
