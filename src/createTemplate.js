@@ -2,8 +2,9 @@ export default function createTemplate(){
     const blurb =   `I'm an aspiring web developer based in Carmarthenshire, 
                     South Wales. After more than ten years working in CAD/CAM programming, 
                     and production automation in the extrusion die industry, I am now beginning 
-                    a new journey in web development. I have experience in HTML, CSS, JavaScript, 
-                    Webpack, and Git.`;
+                    a new journey in web development. `;
+                    // I have experience in HTML, CSS, JavaScript, 
+                    // Webpack, and Git.`;
 
     const WPMSblurb =   `WPMS (Works Progress Management System) - This is a system to track the 
                         production of the components of an extrusion die as they move across the 
@@ -93,10 +94,144 @@ export default function createTemplate(){
                 skillsContainer.id = 'skillsContainer';
                 document.querySelector('#profileBlurbContainer').appendChild(skillsContainer);
 
-                    const skillsText = document.createElement('p');
-                    skillsText.id = 'skillsText';
-                    skillsText.innerHTML = 'Please Check out some of my projects below.';
-                    document.querySelector('#skillsContainer').appendChild(skillsText);
+                    const skillsTextContainer = document.createElement('div');
+                    skillsTextContainer.id = 'skillsTextContainer';
+                    document.querySelector('#skillsContainer').appendChild(skillsTextContainer);
+
+                        const skillsText = document.createElement('p');
+                        skillsText.id = 'skillsText';
+                        skillsText.innerHTML = 'I have experience in:';
+                        document.querySelector('#skillsTextContainer').appendChild(skillsText);
+
+                    const skillsIconsContainer = document.createElement('div');
+                    skillsIconsContainer.id = 'skillsIconsContainer';
+                    document.querySelector('#skillsContainer').appendChild(skillsIconsContainer);
+
+                        const skillsIconsOuter1 = document.createElement('div');
+                        skillsIconsOuter1.id = 'skillsIconsOuter1';
+                        skillsIconsOuter1.className = 'skillsIconsOuter';
+                        document.querySelector('#skillsIconsContainer').appendChild(skillsIconsOuter1);
+
+                            const skillsIconsInner1 = document.createElement('div');
+                            skillsIconsInner1.id = 'skillsIconsInner1';
+                            skillsIconsInner1.className = 'skillsIconsInner';
+                            document.querySelector('#skillsIconsOuter1').appendChild(skillsIconsInner1);
+
+                                const skillsIconsInnerIcon1 = document.createElement('div');
+                                skillsIconsInnerIcon1.id = 'skillsIconsInnerIcon1';
+                                skillsIconsInnerIcon1.className = 'skillsIconsInnerIcon';
+                                document.querySelector('#skillsIconsInner1').appendChild(skillsIconsInnerIcon1);
+
+                            const skillsTag1 = document.createElement('div');
+                            skillsTag1.id = 'skillsTag1';
+                            skillsTag1.className = 'skillsTag';
+                            document.querySelector('#skillsIconsOuter1').appendChild(skillsTag1);
+
+                                const skillsText1 = document.createElement('p');
+                                skillsText1.id = 'skillsText1';
+                                skillsText1.innerHTML = 'HTML5';
+                                document.querySelector('#skillsTag1').appendChild(skillsText1);
+
+                        const skillsIconsOuter2 = document.createElement('div');
+                        skillsIconsOuter2.id = 'skillsIconsOuter2';
+                        skillsIconsOuter2.className = 'skillsIconsOuter';
+                        document.querySelector('#skillsIconsContainer').appendChild(skillsIconsOuter2);
+
+                            const skillsIconsInner2 = document.createElement('div');
+                            skillsIconsInner2.id = 'skillsIconsInner2';
+                            skillsIconsInner2.className = 'skillsIconsInner';
+                            document.querySelector('#skillsIconsOuter2').appendChild(skillsIconsInner2);
+
+                                const skillsIconsInnerIcon2 = document.createElement('div');
+                                skillsIconsInnerIcon2.id = 'skillsIconsInnerIcon2';
+                                skillsIconsInnerIcon2.className = 'skillsIconsInnerIcon';
+                                document.querySelector('#skillsIconsInner2').appendChild(skillsIconsInnerIcon2);
+
+                            const skillsTag2 = document.createElement('div');
+                            skillsTag2.id = 'skillsTag2';
+                            skillsTag2.className = 'skillsTag';
+                            document.querySelector('#skillsIconsOuter2').appendChild(skillsTag2);
+
+                                const skillsText2 = document.createElement('p');
+                                skillsText2.id = 'skillsText2';
+                                skillsText2.innerHTML = 'CSS3';
+                                document.querySelector('#skillsTag2').appendChild(skillsText2);
+
+                        const skillsIconsOuter3 = document.createElement('div');
+                        skillsIconsOuter3.id = 'skillsIconsOuter3';
+                        skillsIconsOuter3.className = 'skillsIconsOuter';
+                        document.querySelector('#skillsIconsContainer').appendChild(skillsIconsOuter3);
+
+                            const skillsIconsInner3 = document.createElement('div');
+                            skillsIconsInner3.id = 'skillsIconsInner3';
+                            skillsIconsInner3.className = 'skillsIconsInner';
+                            document.querySelector('#skillsIconsOuter3').appendChild(skillsIconsInner3);
+
+                                const skillsIconsInnerIcon3 = document.createElement('div');
+                                skillsIconsInnerIcon3.id = 'skillsIconsInnerIcon3';
+                                skillsIconsInnerIcon3.className = 'skillsIconsInnerIcon';
+                                document.querySelector('#skillsIconsInner3').appendChild(skillsIconsInnerIcon3);
+
+                            const skillsTag3 = document.createElement('div');
+                            skillsTag3.id = 'skillsTag3';
+                            skillsTag3.className = 'skillsTag';
+                            document.querySelector('#skillsIconsOuter3').appendChild(skillsTag3);
+
+                                const skillsText3 = document.createElement('p');
+                                skillsText3.id = 'skillsText3';
+                                skillsText3.innerHTML = 'JavaScript';
+                                document.querySelector('#skillsTag3').appendChild(skillsText3);
+
+                        const skillsIconsOuter4 = document.createElement('div');
+                        skillsIconsOuter4.id = 'skillsIconsOuter4';
+                        skillsIconsOuter4.className = 'skillsIconsOuter';
+                        document.querySelector('#skillsIconsContainer').appendChild(skillsIconsOuter4);
+
+                            const skillsIconsInner4 = document.createElement('div');
+                            skillsIconsInner4.id = 'skillsIconsInner4';
+                            skillsIconsInner4.className = 'skillsIconsInner';
+                            document.querySelector('#skillsIconsOuter4').appendChild(skillsIconsInner4);
+
+                                const skillsIconsInnerIcon4 = document.createElement('div');
+                                skillsIconsInnerIcon4.id = 'skillsIconsInnerIcon4';
+                                skillsIconsInnerIcon4.className = 'skillsIconsInnerIcon';
+                                document.querySelector('#skillsIconsInner4').appendChild(skillsIconsInnerIcon4);
+
+                            const skillsTag4 = document.createElement('div');
+                            skillsTag4.id = 'skillsTag4';
+                            skillsTag4.className = 'skillsTag';
+                            document.querySelector('#skillsIconsOuter4').appendChild(skillsTag4);
+
+                                const skillsText4 = document.createElement('p');
+                                skillsText4.id = 'skillsText4';
+                                skillsText4.innerHTML = 'React.js';
+                                document.querySelector('#skillsTag4').appendChild(skillsText4);
+
+                        const skillsIconsOuter5 = document.createElement('div');
+                        skillsIconsOuter5.id = 'skillsIconsOuter5';
+                        skillsIconsOuter5.className = 'skillsIconsOuter';
+                        document.querySelector('#skillsIconsContainer').appendChild(skillsIconsOuter5);
+
+                            const skillsIconsInner5 = document.createElement('div');
+                            skillsIconsInner5.id = 'skillsIconsInner5';
+                            skillsIconsInner5.className = 'skillsIconsInner';
+                            document.querySelector('#skillsIconsOuter5').appendChild(skillsIconsInner5);
+
+                                const skillsIconsInnerIcon5 = document.createElement('div');
+                                skillsIconsInnerIcon5.id = 'skillsIconsInnerIcon5';
+                                skillsIconsInnerIcon5.className = 'skillsIconsInnerIcon';
+                                document.querySelector('#skillsIconsInner5').appendChild(skillsIconsInnerIcon5);
+
+                            const skillsTag5 = document.createElement('div');
+                            skillsTag5.id = 'skillsTag5';
+                            skillsTag5.className = 'skillsTag';
+                            document.querySelector('#skillsIconsOuter5').appendChild(skillsTag5);
+
+                                const skillsText5 = document.createElement('p');
+                                skillsText5.id = 'skillsText5';
+                                skillsText5.innerHTML = 'Node.js';
+                                document.querySelector('#skillsTag5').appendChild(skillsText5);
+
 
             const profilePicContainer = document.createElement('div');
             profilePicContainer.id = 'profilePicContainer';
