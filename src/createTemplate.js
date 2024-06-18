@@ -289,8 +289,24 @@ export default function createTemplate(){
                 const descriptionOneContainer = document.createElement('div');
                 descriptionOneContainer.id = 'descriptionOneContainer';
                 descriptionOneContainer.className = 'descriptionContainer';
-                descriptionOneContainer.innerHTML = WPMSblurb;
+                // descriptionOneContainer.innerHTML = WPMSblurb;
                 document.querySelector('#projectOneContainer').appendChild(descriptionOneContainer);
+
+                    const descriptionOneText = document.createElement('p');
+                    descriptionOneText.id = 'descriptionOneText';
+                    descriptionOneText.className = 'descriptionText';
+                    descriptionOneText.innerHTML = WPMSblurb;
+                    document.querySelector('#descriptionOneContainer').appendChild(descriptionOneText);
+
+                const projectOneButtonContainer = document.createElement('div');
+                projectOneButtonContainer.id = 'projectOneButtonContainer';
+                projectOneButtonContainer.className = 'projectButtonContainer';
+                document.querySelector('#descriptionOneContainer').appendChild(projectOneButtonContainer);
+
+                    const projectOneButton = document.createElement('div');
+                    projectOneButton.id = 'projectOneButton';
+                    projectOneButton.className = 'projectButton';
+                    document.querySelector('#projectOneButtonContainer').appendChild(projectOneButton);
 
             const projectTwoContainer = document.createElement('div');
             projectTwoContainer.id = 'projectTwoContainer';
