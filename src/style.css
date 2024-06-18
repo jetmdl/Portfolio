@@ -364,15 +364,11 @@ p {
 
 .descriptionContainer {
     width: 100%;
-    height: 120px;
+    height: 140px;
     background-color: rgba(0, 0, 0, .8);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1rem;
     color: antiquewhite;
-    display: flex;
-    flex-direction: column;
-    align-items: right;
-    justify-content: end;
     /* padding: 10px; */
 }
  .descriptionText {
@@ -381,11 +377,10 @@ p {
     margin-left: 15px;
     margin-right: 15px;
     margin-top: 10px;
-    margin-bottom: 10px;
  }
 
  .projectButtonContainer {
-    height: 1rem;
+    height: 2rem;
     width: 100%;
     display: flex;
     align-items: center;
@@ -393,13 +388,25 @@ p {
  }
 
  #descriptionOneContainer {
-    display: block;
+    display: none;
  }
 
- #projectOneButton {
+ .projectButton {
     background-color: #ffc300;
-    width: 80px;
+    width: 120px;
     height: 100%;
+    margin: 5px;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .projectButtonText {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #0f172a;
  }
 
  #descriptionTwoContainer {
@@ -411,7 +418,11 @@ p {
  }
 
  #projectOneContainer:hover > #descriptionOneContainer {
-    display: block;
+    /* display: block; */
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
  }
 
  #projectTwoContainer:hover > #descriptionTwoContainer {

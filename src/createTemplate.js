@@ -308,6 +308,12 @@ export default function createTemplate(){
                     projectOneButton.className = 'projectButton';
                     document.querySelector('#projectOneButtonContainer').appendChild(projectOneButton);
 
+                        const projectOneButtonText = document.createElement('p');
+                        projectOneButtonText.id = 'projectOneButtonText';
+                        projectOneButtonText.className = 'projectButtonText';
+                        projectOneButtonText.innerHTML = "See Project ->";
+                        document.querySelector('#projectOneButton').appendChild(projectOneButtonText);
+
             const projectTwoContainer = document.createElement('div');
             projectTwoContainer.id = 'projectTwoContainer';
             projectTwoContainer.className = 'projectContainer';
