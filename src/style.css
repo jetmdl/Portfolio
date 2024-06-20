@@ -370,7 +370,19 @@ p {
     font-size: 1rem;
     color: antiquewhite;
     /* padding: 10px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.projectPlaceholder {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: black;
+    margin-bottom: 90px;
+}
+
  .descriptionText {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 0.8rem;
@@ -425,13 +437,13 @@ p {
     justify-content: end;
  }
 
- #projectTwoContainer:hover > #descriptionTwoContainer {
+ /* #projectTwoContainer:hover > #descriptionTwoContainer {
     display: block;
  }
 
  #projectThreeContainer:hover > #descriptionThreeContainer {
     display: block;
- }
+ } */
 
  #projectOneContainer {
     background: url('./wpms.png');

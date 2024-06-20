@@ -319,6 +319,12 @@ export default function createTemplate(){
             projectTwoContainer.className = 'projectContainer';
             document.querySelector('#projectPreviewContainer').appendChild(projectTwoContainer);
 
+                const projectTwoPlaceholder = document.createElement('p');
+                projectTwoPlaceholder.id = 'projectTwoPlaceholder';
+                projectTwoPlaceholder.className = 'projectPlaceholder';
+                projectTwoPlaceholder.innerHTML = "Coming Soon";
+                document.querySelector('#projectTwoContainer').appendChild(projectTwoPlaceholder);
+
                 const descriptionTwoContainer = document.createElement('div');
                 descriptionTwoContainer.id = 'descriptionTwoContainer';
                 descriptionTwoContainer.className = 'descriptionContainer';
@@ -328,6 +334,12 @@ export default function createTemplate(){
             projectThreeContainer.id = 'projectThreeContainer';
             projectThreeContainer.className = 'projectContainer';
             document.querySelector('#projectPreviewContainer').appendChild(projectThreeContainer);
+
+                const projectThreePlaceholder = document.createElement('p');
+                projectThreePlaceholder.id = 'projectThreePlaceholder';
+                projectThreePlaceholder.className = 'projectPlaceholder';
+                projectThreePlaceholder.innerHTML = "Coming Soon";
+                document.querySelector('#projectThreeContainer').appendChild(projectThreePlaceholder);
 
                 const descriptionThreeContainer = document.createElement('div');
                 descriptionThreeContainer.id = 'descriptionThreeContainer';
