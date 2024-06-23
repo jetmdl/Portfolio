@@ -36,3 +36,6 @@ document.querySelector('#contactCVContainer').addEventListener('click', function
     window.open('./2024_CV_Generic.pdf');
 }, false);
 
+document.querySelector('#projectOneButton').addEventListener('click', function() {
+    location.href = 'https://jetmdl.github.io/WPMS-V3/wip.html'
+}, false);
