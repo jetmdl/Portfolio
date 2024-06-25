@@ -243,6 +243,13 @@ p {
     align-items: center;
     justify-content: center;
 }
+#skillsIconsOuter4 {
+    display: none;
+}
+
+#skillsIconsOuter5 {
+    display: none;
+}
 
 .skillsIconsInner {
     width: 60px;
