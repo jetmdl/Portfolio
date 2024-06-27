@@ -428,6 +428,10 @@ p {
     color: #0f172a;
  }
 
+ #projectOneButton:hover {
+    cursor: pointer;
+ }
+
  #descriptionTwoContainer {
     display: none;
  }
